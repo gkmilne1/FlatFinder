@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Account</title>
+  <link href='dist/css/bootstrap.css' rel='stylesheet'>
+  <link href='main.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<title>Example of Twitter Bootstrap 3 Popover</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top'
+    });
+});
+</script>
+<style type="text/css">
+  .bs-example{
+      margin: 150px 50px;
+    }
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip({
+        placement : 'top'
+    });
+});
+</script>
+<style type="text/css">
+  .bs-example{
+      margin: 100px 50px;
+    }
+</style>
+</head>
+
+<body>
+  
+  <div class="container">
+    <h1>Find Me a Flat</h1>
+  </div>
+
+  <div class='container'> 
+
+      <div class="col-sm-8 LHS"> <!--This is the LHS column-->
+
+         <!--My Profile-->
+          <h2>My Profile</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="profile_photo" src='images/GemmaMilne.jpg'> 
+              <button type="button" class="btn btn-default btn-xs">Edit my profile</button>
+            </div>
+            <div class="col-sm-8">
+              <h3>Gemma Milne</h3>
+              <div class="row">
+            <div class="col-sm-3">
+              <h4>Budget</h4>
+            </div>
+            <div class="col-sm-7">
+              <h4>&pound200 - &pound500 pcm</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <h4>Wants</h4>
+            </div>
+            <div class="col-sm-7">
+              <ul>
+                <li>Double bed</li>
+                <li>Desk in room</li>
+                <li>Ground Floor</li>
+              </ul>
+            </div>
+            </div>
+          </div>
+      </div>
+
+       <!--My Picks-->
+        <h2>My Picks</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="picks_photo" src='images/flat1.jpg'>
+          </div>
+          <div class="col-sm-8">
+            <h3>5 Muswell Hill</h3>
+            <a href="#" data-toggle="tooltip" data-original-title="You picked this"><img class="house" src='images/house.png'></a></li>
+            <a href="#" data-toggle="tooltip" data-original-title="Zara picked this"><img class="house" src='images/house.png'></a></li>
+            <a href="#" data-toggle="tooltip" data-original-title="Eleanor picked this"><img class="house" src='images/house.png'></a></li>
+            <br>
+            <button type="button" class="btn btn-success btn-sm">Book a viewing!</button>
+            <button type="button" class="btn btn-info btn-sm" data-toggle="popover" title="5 Muswell Hill - £450 pcm" data-content="Occupies a splendid position in arguably one of the finest and most desirable locations in London, conveniently placed only a 5 minute walk to Liverpool St Underground.">Info</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="picks_photo" src='images/flat2.jpg'>
+          </div>
+          <div class="col-sm-8">
+            <h3>305 Kestral Avenue</h3>
+            <a href="#" data-toggle="tooltip" data-original-title="You picked this"><img class="house" src='images/house.png'></a></li>
+            <a href="#" data-toggle="tooltip" data-original-title="Zara picked this"><img class="house" src='images/house.png'></a></li>
+            <br>
+            <button type="button" class="btn btn-success btn-sm">Book a viewing!</button>
+            <button type="button" class="btn btn-info btn-sm" data-toggle="popover" title="305 Kestral Avenue - £430 pcm" data-content="A splendid double room in a spacious flat with living room and dining room. The property is presented in top condition and features a fully kitted out kitchen. The flat also contains a washing machine and dishwasher. The rent is inclusive of all bills.">Info</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="picks_photo" src='images/flat3.jpg'>
+          </div>
+          <div class="col-sm-8">
+            <h3>49 Main Street</h3>
+            <a href="#" data-toggle="tooltip" data-original-title="You picked this"><img class="house" src='images/house.png'></a></li>
+            <a href="#" data-toggle="tooltip" data-original-title="Eleanor picked this"><img class="house" src='images/house.png'></a></li>
+            <br>
+            <button type="button" class="btn btn-success btn-sm">Book a viewing!</button>
+            <button type="button" class="btn btn-info btn-sm" data-toggle="popover" title="49 Main Street - £480 pcm" data-content="A well presented third (top) floor apartment in Chelsea Set in a period conversion, the apartment consists of three double bedrooms, a bright living room, fully fitted kitchen and bathroom. There is a separate laundry room and storage area.">Info</button>
+          </div>
+        </div>
+      
+
+    </div>  <!--end of LHS column-->
+
+    <div class="col-sm-4 RHS"> <!--This is the RHS column-->
+
+        <h2>Your Flatmates</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="flatmate_photo" src='images/ZaraNowell.jpg'> 
+          </div>
+          <div class="col-sm-8">
+            <button type="button" class="btn btn-link">Zara Nowell</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="flatmate_photo" src='images/EleWilk.jpg'> 
+          </div>
+          <div class="col-sm-8">
+            <button type="button" class="btn btn-link">Eleanor Wilkinson</button>
+          </div>
+        </div>
+      
+
+    </div> <!--end of RHS column-->
+
+  </div>
+
+  </div>
+</body>
+
+</html>

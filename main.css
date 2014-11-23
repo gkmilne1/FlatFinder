@@ -1,0 +1,66 @@
+div {
+  padding: 5px;
+  border: black 1pt;
+}
+
+#social-buttons button {
+  color: white;
+}
+.btn-twitter {
+  background-color: #00acee;
+  border-color: #009ad5;
+}
+.btn-facebook {
+  background-color: #4868ac;
+  border-color: #314776;
+}
+.btn-pinterest {
+  background-color: #b62f26;
+  border-color: #b62f26;
+}
+
+}
+body {
+	padding-top: 30px;
+}
+
+.profile_photo {
+  max-height: 150px;
+  border-radius: 100%;
+  margin-bottom: 10px
+}
+
+.flatmate_photo {
+  max-height: 70px;
+  max-width: 70px;
+  border-radius: 100%;
+  position: float;
+}
+
+.picks_photo {
+  max-height: 150px;
+  max-width: 180px;
+  border-radius: 20%;
+}
+
+.house {
+  max-width: 30px;
+  margin-bottom: 10px;
+}
+
+.RHS {
+  background-color: #efeefc;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+
