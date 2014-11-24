@@ -1,3 +1,8 @@
+* {
+  font-family: 'Lato', sans-serif;
+  color: gray;
+}
+
 div {
   padding: 5px;
   border: black 1pt;
@@ -31,15 +36,15 @@ body {
 }
 
 .flatmate_photo {
-  max-height: 70px;
-  max-width: 70px;
+  max-height: 100px;
+  max-width: 100px;
   border-radius: 100%;
   position: float;
 }
 
 .picks_photo {
-  max-height: 150px;
-  max-width: 180px;
+  max-height: 100px;
+  max-width: 125px;
   border-radius: 20%;
 }
 
@@ -49,7 +54,8 @@ body {
 }
 
 .RHS {
-  background-color: #efeefc;
+  background-color: #c0f268;
+  border-radius: 10%;
 }
 
 ul {
@@ -61,6 +67,12 @@ button {
   padding: 10px;
 }
 
+.container {
+  background-color: #f9f9f9;
+}
 
+.btn-link {
+  font-: 50px;
+}
 
 

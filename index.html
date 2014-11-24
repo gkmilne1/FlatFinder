@@ -4,6 +4,7 @@
   <title>Your Account</title>
   <link href='dist/css/bootstrap.css' rel='stylesheet'>
   <link href='main.css' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 <title>Example of Twitter Bootstrap 3 Popover</title>
@@ -38,14 +39,13 @@ $(document).ready(function(){
 </head>
 
 <body>
-  
   <div class="container">
     <h1>Find Me a Flat</h1>
   </div>
 
   <div class='container'> 
 
-      <div class="col-sm-8 LHS"> <!--This is the LHS column-->
+      <div class="col-sm-7 LHS"> <!--This is the LHS column-->
 
          <!--My Profile-->
           <h2>My Profile</h2>
@@ -79,14 +79,38 @@ $(document).ready(function(){
           </div>
       </div>
 
-       <!--My Picks-->
-        <h2>My Picks</h2>
+    </div>  <!--end of LHS column-->
+
+
+
+    <div class="col-sm-5 RHS"> <!--This is the RHS column-->
+
+        <h2>Your Flatmates</h2>
         <div class="row">
           <div class="col-sm-4">
-            <img class="picks_photo" src='images/flat1.jpg'>
+            <img class="flatmate_photo" src='images/ZaraNowell.jpg'> 
           </div>
           <div class="col-sm-8">
-            <h3>5 Muswell Hill</h3>
+            <a href=""><h4>Zara Nowell</h4></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="flatmate_photo" src='images/EleWilk.jpg'> 
+          </div>
+          <div class="col-sm-8">
+            <a href=""><h4>Zara Nowell</h4></a>
+          </div>
+        </div>
+
+        <!--My Picks-->
+        <h2>My Picks</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <img class="picks_photo" src='images/flat1.jpg'>
+          </div>
+          <div class="col-sm-7">
+            <h4>5 Muswell Hill</h4>
             <a href="#" data-toggle="tooltip" data-original-title="You picked this"><img class="house" src='images/house.png'></a></li>
             <a href="#" data-toggle="tooltip" data-original-title="Zara picked this"><img class="house" src='images/house.png'></a></li>
             <a href="#" data-toggle="tooltip" data-original-title="Eleanor picked this"><img class="house" src='images/house.png'></a></li>
@@ -96,11 +120,11 @@ $(document).ready(function(){
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-5">
             <img class="picks_photo" src='images/flat2.jpg'>
           </div>
-          <div class="col-sm-8">
-            <h3>305 Kestral Avenue</h3>
+          <div class="col-sm-7">
+            <h4>305 Kestral Avenue</h4>
             <a href="#" data-toggle="tooltip" data-original-title="You picked this"><img class="house" src='images/house.png'></a></li>
             <a href="#" data-toggle="tooltip" data-original-title="Zara picked this"><img class="house" src='images/house.png'></a></li>
             <br>
@@ -109,39 +133,16 @@ $(document).ready(function(){
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-5">
             <img class="picks_photo" src='images/flat3.jpg'>
           </div>
-          <div class="col-sm-8">
-            <h3>49 Main Street</h3>
+          <div class="col-sm-7">
+            <h4>49 Main Street</h4>
             <a href="#" data-toggle="tooltip" data-original-title="You picked this"><img class="house" src='images/house.png'></a></li>
             <a href="#" data-toggle="tooltip" data-original-title="Eleanor picked this"><img class="house" src='images/house.png'></a></li>
             <br>
             <button type="button" class="btn btn-success btn-sm">Book a viewing!</button>
             <button type="button" class="btn btn-info btn-sm" data-toggle="popover" title="49 Main Street - £480 pcm" data-content="A well presented third (top) floor apartment in Chelsea Set in a period conversion, the apartment consists of three double bedrooms, a bright living room, fully fitted kitchen and bathroom. There is a separate laundry room and storage area.">Info</button>
-          </div>
-        </div>
-      
-
-    </div>  <!--end of LHS column-->
-
-    <div class="col-sm-4 RHS"> <!--This is the RHS column-->
-
-        <h2>Your Flatmates</h2>
-        <div class="row">
-          <div class="col-sm-4">
-            <img class="flatmate_photo" src='images/ZaraNowell.jpg'> 
-          </div>
-          <div class="col-sm-8">
-            <button type="button" class="btn btn-link">Zara Nowell</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <img class="flatmate_photo" src='images/EleWilk.jpg'> 
-          </div>
-          <div class="col-sm-8">
-            <button type="button" class="btn btn-link">Eleanor Wilkinson</button>
           </div>
         </div>
       

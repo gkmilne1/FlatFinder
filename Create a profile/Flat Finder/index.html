@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flatfinder - Create your account! </title>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<link href="dist/css/bootstrap.css" rel="stylesheet">
+
+<!-- JAVASCRIPT/JQUERY -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+<script>
+function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+</script>
+
+
+
+</head>
+
+<body>
+<div class="container">	
+
+  <h1>Find Me a Flat</h1>
+<h2> Create Your Account </h2>
+
+<img id="profile" src='images/ellie.jpg'>
+
+<div class="form-group">
+	<label for="exampleInputFile">Upload Your Picture</label>
+	<input type="file" id="exampleInputFile">
+</div>
+
+<form role="form">
+
+	<div class="form-group">
+		<label for="exampleInputEmail1">Username</label>
+		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Pick a Username">
+	</div>
+	
+	<div class="form-group">
+		<label for="exampleInputEmail1">Email address</label>
+		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+	</div>
+
+	<div class="form-group">
+		<label for="exampleInputPassword1">Password</label>
+		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose a Password">
+	</div>
+
+	<p>Choose your budget (per month)</p>
+ 
+	<div data-role="main" class="ui-content">
+		<form method="post" action="demoform.asp">
+			<div data-role="rangeslider">
+				<label for="price-min">Price:</label>
+        		<input type="range" name="price-min" id="price-min" value="200" min="100" max="1000">
+        		<label for="price-max">Price:</label>
+        		<input type="range" name="price-max" id="price-max" value="800" min="100" max="1000">
+			</div>
+		</form>
+	</div>
+
+ 	<p>Choose your must-haves:</p>
+    	<label>
+      		<input type="checkbox"> Double Room
+    	</label>
+    	<label>
+      		<input type="checkbox"> Garden
+    	</label>
+    	<label>
+      	<input type="checkbox"> En Suite
+    	</label>
+    	<label>
+      		<input type="checkbox"> Living Room
+    	</label>
+
+	<p>Link with your flatmates:</p>
+
+	<input type="text" class="form-control" placeholder="Type name">
+
+
+	<input type="button" name="answer" value="Search" onclick="showDiv()" />	
+	
+	<div id="welcomeDiv"  style="display:none;" class="answer_list" >
+
+		<img id="gemma" src='images/Gemma.jpg' class="img-circle">
+		<h3>Gemma Milne</h3>
+    		<a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Link as flatmate</a>
+
+    		<div data-role="popup" id="myPopup" class="ui-content">
+      			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      			<p>You have linked with Gemma!</p>
+    		</div>
+
+	</div>
+
+<p>Outline preferred location:</p>
+
+<div>
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=51.5074%2C-0.1278&key=AIzaSyAeYkEDxA0nV7sTeguCWVpPCpi2z1sEt6M"></iframe>
+
+<!--In a real version I would work out how to get a map that you can draw locations on!-->
+
+</div>
+
+<a href="#success" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Submit</a>
+
+    		<div data-role="popup" id="success" class="ui-content">
+      			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      			<p>You have made an account! Now, start searching for properties.</p>
+    		</div>
+</form>
+ 
+</div>
+</body>
+</html>

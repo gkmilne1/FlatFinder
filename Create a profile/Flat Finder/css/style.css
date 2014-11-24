@@ -1,0 +1,27 @@
+
+
+.container {
+	font-family: 'Lato', sans-serif;
+	color: gray;
+}
+
+#profile {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+#gemma {
+	border-radius: 50%;
+	width: 128px;
+	height: 128px;
+}
+
+.form-group {
+	font-family: 'Lato', sans-serif !important;
+
+}
+
+.checkbox {
+	font-family: 'Lato', sans-serif !important;
+}
