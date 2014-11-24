@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Account</title>
+  <title> Find Me a Flat! - Your Account</title>
   <link href='dist/css/bootstrap.css' rel='stylesheet'>
   <link href='main.css' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -36,6 +36,12 @@ $(document).ready(function(){
       margin: 100px 50px;
     }
 </style>
+<script>
+$(".btn-house").click(function() {
+  // Instead of directly editing CSS, toggle a class
+  $(this).toggleClass(".btn-success");
+});
+</script>
 </head>
 
 <body>
@@ -78,6 +84,75 @@ $(document).ready(function(){
             </div>
           </div>
       </div>
+
+      <!--My Picks-->
+        <h2>Flats Matching Your Wants</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <br>
+            <img class="finder_photo" src='images/flat4.jpg'>
+          </div>
+          <div class="col-sm-5">
+            <h4>3b Horris Place</h4>
+            <p>Cosy 3 double-bed (not far from the chicken shop, but with double glazing), perfect for the metropolitan student group.</p>
+            <ul>
+              <li>Fully furnished</li>
+              <li>Dishwasher</li>
+              <li>Bills included</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <br>
+            <br>
+            <button type="button" class="btn btn-default btn-sm btn-house"><img class="house" src='images/house.png'></button>
+            <br>
+            <h3>£420pcm</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <br>
+            <img class="finder_photo" src='images/flat5.jpg'>
+          </div>
+          <div class="col-sm-5">
+            <h4>75 Horseradish Lane</h4>
+            <p>En-Suite Bedroom with Large shared Kitchen, shared balcony with London city view and Beautiful Stratford view, close to olympic park </p>
+            <ul>
+              <li>Large screen TV</li>
+              <li>BBQ</li>
+              <li>Bills not included</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <br>
+            <br>
+            <button type="button" class="btn btn-default btn-sm btn-house"><img class="house" src='images/house.png'></button>
+            <br>
+            <h3>£480pcm</h3>
+          </div>
+        </div>
+       <div class="row">
+          <div class="col-sm-4">
+            <br>
+            <img class="finder_photo" src='images/flat6.jpg'>
+          </div>
+          <div class="col-sm-5">
+            <h4>56 Beehive Lane</h4>
+            <p>Purpose built student accomodation 3-bed flat with all bill included, a short walk to Algate East station.</p>
+            <ul>
+              <li>Secure reception</li>
+              <li>Cleaned once a week</li>
+              <li>Great storage space</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <br>
+            <br>
+            <button type="button" class="btn btn-default btn-sm btn-house"><img class="house" src='images/house.png'></button>
+            <br>
+            <h3>£300pcm</h3>
+          </div>
+        </div>
 
     </div>  <!--end of LHS column-->
 
@@ -146,7 +221,6 @@ $(document).ready(function(){
           </div>
         </div>
       
-
     </div> <!--end of RHS column-->
 
   </div>

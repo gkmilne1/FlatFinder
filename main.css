@@ -71,8 +71,14 @@ button {
   background-color: #f9f9f9;
 }
 
-.btn-link {
-  font-: 50px;
+.finder_photo {
+  max-height: 120px;
+  max-width: 170px;
+  border-radius: 20%;
 }
 
+
+.btn-success {
+  background-color: green;
+}
 
